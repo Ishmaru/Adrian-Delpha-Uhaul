@@ -17,6 +17,19 @@
             console.log(err);
           });
       }
+      $scope.addPosts = function(userId, body, title){
+        console.log('test');
+        $http({
+          method: 'POST',
+          url: 'http://jsonplaceholder.typicode.com/posts',
+          data: 'test',
+        }).then(function successCallback(res) {
+          console.log(added);
+          $scope.grabPosts($stateParams.userId);
+          }, function errorCallback(err) {
+            console.log(err);
+          });
+      }
       $scope.grabPosts($stateParams.userId);
     }]);
 })();
