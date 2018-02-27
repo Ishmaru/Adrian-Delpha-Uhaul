@@ -1,25 +1,6 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="uhaulApp">
-<head>
-  <meta charset="UTF-8">
-  <title>AngularJS</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-</head>
-<body class="container"  ng-controller="PostsController">
-  <h1>AngularJS</h1>
-    <ul>
-      <li ng-repeat="post in posts">
-        <span ng-show="user">{{post}}</span>
-
-      </li>
-    </ul>
-</body>
-
-
-<!--   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/controllers/get-controller.js"></script>
-  <script src="js/controllers/posts-controller.js"></script> -->
-</body>
-</html>
+<ul ng-controller="PostsController">
+  <li ng-repeat="post in posts">
+    <h3 ng-show="post">{{post.title}}</h3>
+    <span ng-show="post">{{post.body}}</span>
+  </li>
+</ul>
