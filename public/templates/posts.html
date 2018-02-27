@@ -1,5 +1,5 @@
 <ul ng-controller="PostsController">
-  <button ng-click"addPosts(1, "testingTesting", "ADTEST")">AddPost</button>
+  <button ng-click="addPosts(1, 'testingTesting', 'ADTEST')">AddPost</button>
   <li ng-repeat="post in posts">
     <h3 ng-show="post">{{post.title}}</h3>
     <span ng-show="post">{{post.body}}</span>
