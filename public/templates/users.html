@@ -1,6 +1,6 @@
 <ul ng-controller="GetController">
   <li ng-repeat="user in users">
-    <a ui-sref="posts/userId:{{user.id}}">
+    <a ui-sref="posts({userId:user.id})">
       <span ng-show="user">{{user.name}}</span>
       <span ng-show="user">{{user.address.street}}</span>
       <span ng-show="user">{{user.address.suite}}</span>
