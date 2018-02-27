@@ -1,9 +1,11 @@
 <ul ng-controller="GetController">
   <li ng-repeat="user in users">
-    <span ng-show="user">{{user.name}}</span>
-    <span ng-show="user">{{user.address.street}}</span>
-    <span ng-show="user">{{user.address.suite}}</span>
-    <span ng-show="user">{{user.address.city}}</span>
-    <span ng-show="user">{{user.address.zipcode}}</span>
+    <a ui-sref="posts/userId:{{user.id}}">
+      <span ng-show="user">{{user.name}}</span>
+      <span ng-show="user">{{user.address.street}}</span>
+      <span ng-show="user">{{user.address.suite}}</span>
+      <span ng-show="user">{{user.address.city}}</span>
+      <span ng-show="user">{{user.address.zipcode}}</span>
+    </a>
   </li>
 </ul>

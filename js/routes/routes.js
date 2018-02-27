@@ -17,7 +17,7 @@
         controllerAs: "vm"
       })
       .state('posts', {
-        url: '/posts:userId',
+        url: '/posts/userId:userId',
         templateUrl: 'public/templates/posts.html',
         controller: 'PostsController',
         controllerAs: "vm"
