@@ -12,7 +12,7 @@
     $stateProvider
       .state('users', {
         url: '/',
-        templateUrl: 'index.html',
+        templateUrl: 'public/templates/users.html',
         controller: 'GetController',
         controllerAs: "vm"
       })

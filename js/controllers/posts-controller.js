@@ -4,7 +4,7 @@
   angular
     .module('uhaulApp')
     .controller('PostsController', ['$scope', '$http', '$state', '$stateParams', function($scope, $http, $state, $stateParams) {
-      console.log($stateParams);
+      console.log($stateParams.userId);
       $scope.posts = [];
       $scope.grabPosts = function(userId){
         $http({
